@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boomer Projects</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="left-container">
+        <img src="image.jpg" alt="Sign-up-image" />
+      </div>
+      <div class="right-container">
+        <button type="button" class="btn1" id="signInBtn">SIGN IN</button>
+        <br />
+        <br />
+
+        <form action="connect.php" method="POST">
+          <div class="row">
+            <h1 class="heading">Explore & Experience</h1>
+            <p class="para">Get onto your most comfortable journey yet. All the way up</p>
+          </div>
+          <br />
+          <div class="formfield">
+            <div class="flex">
+              <div class="firstName">
+                <input type="text" class="nameInp" id="name" name="firstName" placeholder="First name" required />
+              </div>
+              <div class="lastName">
+                <input type="text" class="nameInp" id="lastName" name="lastName" placeholder="Last name" required />
+              </div>
+            </div>
+          </div>
+          <div class="formfield">
+            <input type="text" required id="email" name="email" placeholder="Email" required />
+            <div class="error"></div>
+          </div>
+          <div class="formfield">
+            <input type="text" required id="userName" name="userName" placeholder="Username" required />
+          </div>
+          <div class="formfield">
+            <input type="password" required id="password" name="password" placeholder="Password" required/>
+          </div>
+          <div class="formfield">
+            <input type="password" required id="cPassword" name="cPassword" placeholder="Confirm Password" required />
+          </div>
+          <div class="formfield">
+            <button type="submit" class="btn2">Get Started</button>
+          </div>
+        </form>
+        <form class="signin-form" id="signInForm" action="signin.php" method="POST">
+          <div class="row">
+            <input type="text" required id="signInUsername" name="username" placeholder="Username" required />
+          </div>
+          <div class="row">
+            <input type="password" required id="signInPassword" name="password" placeholder="Password" required />
+          </div>
+          <div class="row">
+            <button class="btn1" id="signInSubmitBtn">Sign In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
