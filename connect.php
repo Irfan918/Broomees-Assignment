@@ -7,6 +7,7 @@
 	$cPassword = $_POST['cPassword'];
 
 	// Database connection
+	if(isset($_POST['email'])){
 	$conn = new mysqli('localhost','root','','test');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
@@ -20,4 +21,5 @@
 		$stmt->close();
 		$conn->close();
 	}
+}
 ?>
